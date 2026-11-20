@@ -1,0 +1,30 @@
+@baseUrl = http://localhost:3000
+
+### CREATE - add a student
+POST {{baseUrl}}/api/students
+Content-Type: application/json
+
+{
+    "name": "Budi Santoso",
+    "major": "Informatika",
+    "gpa": 3.75
+}
+
+### READ ALL - all students
+GET {{baseUrl}}/api/students
+
+### READ ONE - student by id
+GET {{baseUrl}}/api/students/1
+
+### UPDATE - edit a student
+PUT {{baseUrl}}/api/students/1
+Content-Type: application/json
+
+{
+    "name": "Budi Santoso",
+    "major": "Sistem Informasi",
+    "gpa": 3.80
+}
+
+### DELETE - remove a student
+DELETE {{baseUrl}}/api/students/1
